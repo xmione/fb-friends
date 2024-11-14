@@ -47,7 +47,8 @@ def get_user_env_var(env_var):
 # Usage
 try:
     token = get_user_env_var('BUDDY_LINK_TOKEN')
-    print(f"Token: {token}")
+    # for testing only because it is dangerous to print your token
+    #print(f"Token: {token}")
 except KeyError as e:
     print(e)
 
